@@ -17,7 +17,6 @@ const ReactSliding = ({ arrowSize, children, defaultIndex, height, slides, timeo
         <li
           key={`slide-${index}`}
           className={`slide${index === currentIndex ? ' show' : ''}`}
-          // className={`${css.Slide} ${index === currentIndex ? css.Show : ''}`}
           style={{
             backgroundImage: `url(${slide})`,
             transition: `opacity 500ms ease-in-out`
@@ -28,7 +27,6 @@ const ReactSliding = ({ arrowSize, children, defaultIndex, height, slides, timeo
         <div
           key={`dot-${index}`}
           className={`dot${index === currentIndex ? ' current' : ''}`}
-          // className={`${css.Dot} ${index === currentIndex ? css.Current : ''}`}
           onClick={() => setIndex(index)}
         />
       );
@@ -51,26 +49,15 @@ const ReactSliding = ({ arrowSize, children, defaultIndex, height, slides, timeo
       if (intervalRef.current !== void 0) {
         clearInterval(intervalRef.current);
       }
-      // document.removeEventListener("keydown", handleKeyPress)
     };
   });
 
   return (
     <div className='container' style={{ width: width, height: height }}>
-      {/* <div className={css.Container} style={{ width: width, height: height }}> */}
-      <Arrow
-        className='nav-button previous'
-        // className={`${css.NavButton} ${css.Previous}`}
-        onClick={handleNavClick(previous)}
-        size={arrowSize}
-        direction='left'
-      />
+      <Arrow className='nav-button previous' onClick={handleNavClick(previous)} size={arrowSize} direction='left' />
       <Arrow className='nav-button next' onClick={handleNavClick(next)} size={arrowSize} direction='right' />
-      {/* <Arrow className={`${css.NavButton} ${css.Next}`} onClick={handleNavClick(next)} size={24} direction='right' /> */}
       <ul className='slides'>{slideElements}</ul>
-      {/* <ul className={css.Slides}>{slideElements}</ul> */}
       <div className='dotbar'>{dots}</div>
-      {/* <div className={css.DotBar}>{dots}</div> */}
     </div>
   );
 };
