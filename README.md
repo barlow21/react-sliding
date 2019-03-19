@@ -12,14 +12,6 @@ npm install --save react-sliding
 
 ## Properties
 
-arrowSize: 48,
-children: void 0,
-defaultIndex: 0,
-height: '100%',
-slides: [],
-timeout: 5000,
-width: '100%'
-
 | Property     | Description                                                       | Type    | Default |
 | ------------ | ----------------------------------------------------------------- | ------- | ------- |
 | arrowSize    | Set the size for the previous and next arrows                     | Integer | 48      |
