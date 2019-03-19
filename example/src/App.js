@@ -1,12 +1,7 @@
-import React from 'react'
-import { useMyHook } from 'react-sliding'
+import React from 'react';
+import ReactSliding from 'react-sliding';
 
-const App = () => {
-  const example = useMyHook()
-  return (
-    <div>
-      {example}
-    </div>
-  )
-}
-export default App
+const slides = ['images/bee.jpg', 'images/bridge.jpg', 'images/cornfield.jpg', 'images/deer.jpg'];
+
+const Example = () => <ReactSliding slides={slides} />;
+export default Example;
