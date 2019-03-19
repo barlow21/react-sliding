@@ -4,6 +4,10 @@
 
 [![NPM](https://img.shields.io/npm/v/react-sliding.svg)](https://www.npmjs.com/package/react-sliding) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+## Demo
+
+[Live](https://barlow21.github.io/react-sliding/)
+
 ## Install
 
 ```bash
