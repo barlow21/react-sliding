@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/react-sliding/static/js/runtime~main.7042306e.js"
   },
   {
-    "revision": "3443af07897dfcd5ea77",
-    "url": "/react-sliding/static/js/main.0cda7e09.chunk.js"
+    "revision": "e86eb573e048761ac8f3",
+    "url": "/react-sliding/static/js/main.929b07e5.chunk.js"
   },
   {
     "revision": "c20292bb7037b868c032",
     "url": "/react-sliding/static/js/2.78835bd1.chunk.js"
   },
   {
-    "revision": "3443af07897dfcd5ea77",
+    "revision": "e86eb573e048761ac8f3",
     "url": "/react-sliding/static/css/main.03ab16e4.chunk.css"
   },
   {
-    "revision": "e5fbd355fef0f8a9c047b51d4c37abb2",
+    "revision": "2c640514e8378388da9c85046ffa57ac",
     "url": "/react-sliding/index.html"
   }
 ];
