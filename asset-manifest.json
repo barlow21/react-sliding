@@ -1,13 +1,13 @@
 {
-  "main.css": "/react-sliding/static/css/main.03ab16e4.chunk.css",
-  "main.js": "/react-sliding/static/js/main.929b07e5.chunk.js",
-  "main.js.map": "/react-sliding/static/js/main.929b07e5.chunk.js.map",
+  "main.css": "/react-sliding/static/css/main.d81022f5.chunk.css",
+  "main.js": "/react-sliding/static/js/main.91cae7ef.chunk.js",
+  "main.js.map": "/react-sliding/static/js/main.91cae7ef.chunk.js.map",
   "runtime~main.js": "/react-sliding/static/js/runtime~main.7042306e.js",
   "runtime~main.js.map": "/react-sliding/static/js/runtime~main.7042306e.js.map",
-  "static/js/2.78835bd1.chunk.js": "/react-sliding/static/js/2.78835bd1.chunk.js",
-  "static/js/2.78835bd1.chunk.js.map": "/react-sliding/static/js/2.78835bd1.chunk.js.map",
+  "static/js/2.59fed3ab.chunk.js": "/react-sliding/static/js/2.59fed3ab.chunk.js",
+  "static/js/2.59fed3ab.chunk.js.map": "/react-sliding/static/js/2.59fed3ab.chunk.js.map",
   "index.html": "/react-sliding/index.html",
-  "precache-manifest.d3e2cc1555c3ef36933da01cb67a36b8.js": "/react-sliding/precache-manifest.d3e2cc1555c3ef36933da01cb67a36b8.js",
+  "precache-manifest.4078dda86808e157af156ed26b68b68c.js": "/react-sliding/precache-manifest.4078dda86808e157af156ed26b68b68c.js",
   "service-worker.js": "/react-sliding/service-worker.js",
-  "static/css/main.03ab16e4.chunk.css.map": "/react-sliding/static/css/main.03ab16e4.chunk.css.map"
+  "static/css/main.d81022f5.chunk.css.map": "/react-sliding/static/css/main.d81022f5.chunk.css.map"
 }
