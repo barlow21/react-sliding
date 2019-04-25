@@ -4,7 +4,7 @@ import Arrow from './Arrow';
 
 import './style.css';
 
-const ReactSliding = ({ arrowSize, children, defaultIndex, height, slides, timeout, width }) => {
+const ReactSliding = ({ arrowSize, children, disableIndex, defaultIndex, height, slides, timeout, width }) => {
   const [currentIndex, setIndex] = useState(defaultIndex);
   const intervalRef = useRef();
 
@@ -23,13 +23,15 @@ const ReactSliding = ({ arrowSize, children, defaultIndex, height, slides, timeo
           }}
         />
       );
-      dots.push(
-        <div
-          key={`dot-${index}`}
-          className={`dot${index === currentIndex ? ' current' : ''}`}
-          onClick={() => setIndex(index)}
-        />
-      );
+      if (!disableIndex) {
+        dots.push(
+          <div
+            key={`dot-${index}`}
+            className={`dot${index === currentIndex ? ' current' : ''}`}
+            onClick={() => setIndex(index)}
+          />
+        );
+      }
     });
   }
 
@@ -57,7 +59,7 @@ const ReactSliding = ({ arrowSize, children, defaultIndex, height, slides, timeo
       <Arrow className='nav-button previous' onClick={handleNavClick(previous)} size={arrowSize} direction='left' />
       <Arrow className='nav-button next' onClick={handleNavClick(next)} size={arrowSize} direction='right' />
       <ul className='slides'>{slideElements}</ul>
-      <div className='dotbar'>{dots}</div>
+      {!disableIndex && <div className='dotbar'>{dots}</div>}
     </div>
   );
 };
@@ -65,6 +67,7 @@ const ReactSliding = ({ arrowSize, children, defaultIndex, height, slides, timeo
 ReactSliding.propTypes = {
   arrowSize: PropTypes.number,
   children: PropTypes.arrayOf(PropTypes.node),
+  disableIndex: PropTypes.bool,
   defaultIndex: PropTypes.number,
   height: PropTypes.string,
   slides: PropTypes.arrayOf(PropTypes.string),
@@ -75,6 +78,7 @@ ReactSliding.propTypes = {
 ReactSliding.defaultProps = {
   arrowSize: 48,
   children: void 0,
+  disableIndex: false,
   defaultIndex: 0,
   height: '100%',
   slides: [],

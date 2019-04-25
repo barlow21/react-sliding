@@ -20,6 +20,7 @@ npm install --save react-sliding
 | ------------ | ----------------------------------------------------------------- | ------- | ------- |
 | arrowSize    | Set the size for the previous and next arrows                     | Integer | 48      |
 | defaultIndex | Choose the index where the slideshow should start                 | Integer | 0       |
+| disableIndex | Choose whether to show or hide the index display                  | Boolean | false   |
 | height       | Set the height of the slideshow                                   | String  | '100%'  |
 | slides       | The images you want to be shown. This must be an array of strings | Array   | []      |
 | timeout      | Set the timeout in ms at which the images change                  | Integer | 5000    |
@@ -33,7 +34,11 @@ import ReactSliding from "react-sliding";
 
 const slides = ["images/bee.jpg", "images/bridge.jpg", "images/cornfield.jpg", "images/deer.jpg"];
 
-const Example = () => <ReactSliding slides={slides} />;
+const Example = () => (
+  <div style={{ position: "relative" }}>
+    <ReactSliding slides={slides} />
+  </div>
+);
 export default Example;
 ```
 
